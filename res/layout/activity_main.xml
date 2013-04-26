@@ -1,0 +1,73 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/radian_bg" 
+    android:onClick="stopAll">
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="80dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:shadowColor="#DDFF0000"
+        android:shadowDx="0.0"
+        android:shadowDy="0.0"
+        android:shadowRadius="4"
+        android:text="@string/hello_world"
+        android:textColor="#CC0066"
+        android:textSize="36sp"
+        android:textStyle="bold|italic"
+        tools:context=".MainActivity" />
+
+    <Button
+        android:id="@+id/button1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="24dp"
+        android:background="@android:color/transparent"
+        android:onClick="turnLeft"
+        android:text="@string/left_button"
+        android:textColor="#0066FF"
+        android:textSize="64sp" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignBaseline="@+id/button1"
+        android:layout_alignBottom="@+id/button1"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="24dp"
+        android:background="@android:color/transparent"
+        android:onClick="turnRight"
+        android:text="@string/right_button"
+        android:textColor="#0066FF"
+        android:textSize="64sp" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/button1"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="35dp"
+        android:text="@string/speech"
+        android:onClick="speak" />
+
+    <Button
+        android:id="@+id/button4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignLeft="@+id/button3"
+        android:layout_below="@+id/button3"
+        android:text="@string/bgspeech" 
+        android:onClick="bgspeak"/>
+
+</RelativeLayout>

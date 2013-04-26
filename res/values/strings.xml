@@ -1,0 +1,12 @@
+<resources>
+
+    <string name="app_name">Arrows</string>
+    <string name="hello_world">Test</string>
+    <string name="menu_settings">Settings</string>
+    <string name="title_activity_main">Signal</string>
+    <string name="left_button">&lt;&lt;</string>
+    <string name="right_button">&gt;&gt;</string>
+    <string name="speech">Speak</string>
+    <string name="bgspeech">BG Speech</string>
+
+</resources>
